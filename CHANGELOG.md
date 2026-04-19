@@ -4,6 +4,11 @@ Alle relevanten Änderungen an diesem Projekt werden hier dokumentiert.
 
 Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.1.0/) und folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.1.2] - 2026-04-19
+
+### Dokumentation
+- `SECURITY.md`: Hinweis, dass die Console-Meldung „Refused to execute a script (inline)" von einem Firebase-Long-Polling-Transport stammt, der einen `<script>`-Block in einen IFRAME schreibt. Dieser Transport scheitert erwartungsgemäß an der CSP (kein `'unsafe-inline'`, Inhalt variiert pro Request → nicht hash-pinbar). Das SDK fällt still auf den erlaubten `<script src="https://*.firebaseio.com/.lp?...">`-Transport zurück; der Counter funktioniert. `'unsafe-inline'` würde den Log leiser machen, aber den XSS-Schutz der CSP aushebeln — Lärm wird daher bewusst in Kauf genommen.
+
 ## [1.1.1] - 2026-04-19
 
 ### Behoben
