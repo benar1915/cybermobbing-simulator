@@ -4,6 +4,17 @@ Alle relevanten Änderungen an diesem Projekt werden hier dokumentiert.
 
 Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.1.0/) und folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.1.1] - 2026-04-19
+
+### Behoben
+- **View-Counter auf Safari und bei deaktiviertem WebSocket:** Content Security Policy erlaubte `script-src` nur auf `self` + `gstatic.com`. Wenn Firebase Realtime Database vom WebSocket auf Long-Polling zurückfällt (Safari mit Extensions, restriktive Netzwerke), lädt es die Response als `<script>` von `firebaseio.com/.lp?...`. Diese wurden von der CSP geblockt — Counter blieb auf `--` und verschwand nach 5 s. `firebaseio.com` ist jetzt in `script-src` zugelassen.
+
+### Hinzugefügt
+- `/favicon.svg`: dunkles rundes Icon mit Sprechblase und Benachrichtigungspunkt in der bestehenden Farbpalette. Beseitigt den 404-Eintrag auf `/favicon.ico` in den Browser-Logs.
+
+### Geändert
+- CSP `connect-src` enthält zusätzlich `https://www.gstatic.com`, damit DevTools die Firebase-Sourcemaps (`.js.map`) beim Debuggen laden können. Produktivverhalten für normale Besucher unverändert — Sourcemaps werden nur mit geöffneten DevTools angefordert.
+
 ## [1.1.0] - 2026-04-19
 
 ### Geändert
